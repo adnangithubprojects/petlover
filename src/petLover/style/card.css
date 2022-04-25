@@ -1,0 +1,92 @@
+.Services {
+  @apply flex justify-center bg-white items-center gap-2 w-[330px] h-[350px];
+}
+
+.Services__menu__btn {
+  @apply w-[110px] text-red-500 border-b-2 hover:border-b-red-600 font-bold h-[35px];
+}
+
+/* =====================
+  =======================
+  Team__Card
+  =======================
+  ================== */
+
+.Team__Card {
+  transition: all 0.3s ease-in;
+
+  @apply w-[250px] h-[400px] flex flex-col items-center bg-gray-100 rounded-md overflow-hidden;
+}
+.Team__Card:hover .Team__Card__icon {
+  @apply flex;
+}
+.Team__Card:hover .Team__Card__menu {
+  @apply hidden;
+}
+.Team__Card__image {
+  @apply h-[300px] w-full overflow-hidden;
+}
+
+.Team__Card__icon {
+  @apply hidden w-full h-[100px] bg-slate-900  items-center justify-center gap-2;
+}
+.Team__Card__icon span {
+  @apply border border-orange-600 p-2 cursor-pointer rounded-[50%] text-orange-600 hover:text-slate-300 hover:bg-orange-500 text-xl;
+}
+
+.Team__Card__menu {
+  @apply text-black font-bold flex flex-col h-[100px] items-center justify-center;
+}
+/* =====================
+  =======================
+  Review__Card
+  =======================
+  ================== */
+
+.Review__Card {
+  @apply justify-center w-[320px] h-[430px] flex flex-col gap-7 items-center border-[1px] rounded-md border-yellow-700;
+}
+.Review__Card__image {
+  @apply overflow-hidden;
+}
+.Review__img1:hover {
+  transform: scale(1.1);
+}
+.img2 {
+  @apply rounded-[50%] w-[170px] h-[170px] border-r-8 border-yellow-700;
+}
+
+.Review__Card__menu {
+  @apply text-yellow-600 font-bold flex flex-col justify-center gap-2;
+}
+.Review__Card__reveiw {
+  @apply flex pt-2;
+}
+/* ===========
+Blog Card
+============= */
+.Blog1 {
+  @apply bg-gray-100 flex flex-col  rounded-md justify-start   items-start gap-2 w-[330px] h-[450px] md:w-[350px] md:h-[460px];
+}
+.Blog1 p span {
+  @apply flex gap-1 items-center justify-center text-gray-500;
+}
+
+.Blog1__menu__btn {
+  @apply w-[110px] text-red-500 hover:text-red-700 border-b-2 hover:border-b-red-600 font-bold h-[35px];
+}
+/* ===========
+Price Card
+============= */
+.Price {
+  @apply bg-gray-100 flex flex-col  rounded-md justify-start   items-start gap-2 w-[330px]  md:w-[350px] h-[475px];
+}
+.Price__menu {
+  @apply flex flex-col items-center justify-center gap-2  text-gray-500 w-full;
+}
+.Price__menu p {
+  @apply p-1 flex gap-2 items-center justify-center;
+}
+.Price__btn {
+  @apply w-full bg-orange-700 text-white font-bold h-[50px];
+}

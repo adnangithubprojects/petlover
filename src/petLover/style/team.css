@@ -1,0 +1,9 @@
+.Team__Container {
+  @apply flex flex-col items-center justify-center gap-10  h-auto py-20;
+}
+
+@media (max-width: 768px) {
+  .Team__Container {
+    @apply justify-center;
+  }
+}

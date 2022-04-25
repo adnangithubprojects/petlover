@@ -1,0 +1,4 @@
+.bgimg {
+  /* background-image: url("../asset/images/carousel-2.jpg"); */
+  @apply flex  justify-center items-center  w-full h-full;
+}

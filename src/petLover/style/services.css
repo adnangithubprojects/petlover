@@ -1,0 +1,9 @@
+.Services__Container {
+  @apply flex flex-col items-center justify-center gap-4 md:gap-10 h-auto py-8  md:py-20 bg-gray-100;
+}
+/* 
+@media (max-width: 768px) {
+  .Services__Container {
+    @apply justify-center;
+  }
+} */

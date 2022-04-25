@@ -1,0 +1,97 @@
+nav {
+  @apply relative flex flex-row justify-between px-4 md:px-20 bg-black items-center  h-24 text-white;
+}
+
+.menu {
+  @apply flex  capitalize h-24 items-center   text-xl md:mr-4 lg:mr-12;
+}
+.ab {
+  @apply py-8 px-6;
+}
+.ab li ul li {
+  @apply bg-white py-[2px] px-[28px];
+}
+.ab:hover li ul li {
+  @apply bg-white z-50;
+}
+.ab li ul {
+  display: none;
+}
+.ab:hover li ul {
+  @apply flex flex-col md:absolute md:top-[62px] md:-left-6 border-2 text-black  bg-white z-50;
+}
+.ab li:active ul {
+  @apply flex;
+}
+.ab:hover {
+  @apply bg-orange-500 py-[34px];
+}
+
+.Logo {
+  @apply flex w-full justify-between items-center md:hidden;
+}
+
+.Logo__container {
+  @apply cursor-pointer;
+}
+.Help__icn {
+  @apply border border-slate-800 p-1 cursor-pointer rounded-[50%] text-slate-800 hover:text-slate-300 hover:bg-green-800 text-xl;
+}
+/* .dropDown {
+  @apply hidden;
+}
+.dropDown:hover {
+  @apply flex flex-col; */
+
+@media (max-width: 1024px) {
+  nav {
+    @apply px-4;
+  }
+}
+@media (max-width: 940px) {
+  nav {
+    @apply px-4;
+  }
+  .ab {
+    @apply px-3;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    transition: all 0.2s ease-in-out;
+    @apply flex-col pl-8 bg-black   h-auto pb-4 w-full absolute top-24 left-0 z-50;
+  }
+
+  .Icon__container {
+    @apply flex border border-slate-700 p-3 rounded-md text-xl;
+  }
+  .menu.active {
+    left: -100%;
+  }
+  .Navbtn {
+    @apply hidden;
+  }
+
+  .ab {
+    @apply py-2 w-full;
+  }
+  .ab:hover {
+    @apply py-2;
+  }
+
+  .ab li ul {
+    @apply flex flex-col   bg-white z-50 w-full;
+  }
+  .ab li ul li {
+    @apply text-black z-50;
+  }
+}
+
+/* @keyframes pulse {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+} */

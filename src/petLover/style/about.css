@@ -1,0 +1,56 @@
+.About {
+  @apply flex justify-evenly items-center flex-wrap w-full gap-2 h-screen;
+}
+.About__left {
+  @apply flex flex-col gap-5 w-[500px] text-lg;
+}
+.About__right {
+}
+/* ===========
+about 2
+=============== */
+.About2 {
+  @apply flex justify-evenly items-center flex-wrap h-auto;
+}
+.About2__img {
+  @apply w-[250px] h-[250px] md:w-[450px] md:h-[506px];
+}
+.About2__Text {
+  @apply flex flex-col gap-8 w-[550px];
+}
+.About2__Text__Card {
+  @apply flex flex-wrap w-[530px] gap-6 pt-4;
+}
+
+@media (max-width: 1024px) {
+  .About {
+    @apply h-auto gap-y-8 py-6;
+  }
+  .About2 {
+    @apply h-auto gap-y-8 py-6;
+  }
+}
+
+@media (max-width: 768px) {
+  .About {
+    @apply h-auto gap-y-8 py-6;
+  }
+  .About__left {
+    @apply pl-4;
+  }
+  /* ======
+  about2
+  ====== */
+  .About2 {
+    @apply h-auto gap-y-8 py-6;
+  }
+  .About2__img {
+    @apply pl-2;
+  }
+  .About2__Text {
+    @apply w-auto;
+  }
+  .About2__Text__Card {
+    @apply w-full;
+  }
+}

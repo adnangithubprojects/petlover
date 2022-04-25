@@ -1,0 +1,88 @@
+.Footer {
+  @apply w-full flex justify-evenly pt-20 h-96 bg-zinc-900 text-white;
+}
+/* ===============
+===LOGO===========
+================== */
+.Footer__logo {
+  @apply flex flex-col gap-6  w-[350px];
+}
+.Footer__logo p {
+  @apply leading-5 h-[200px] text-left  w-[270px];
+}
+
+/* ===============
+===adress===========
+================== */
+.Footer__address {
+  @apply flex flex-col pl-6 md:pl-0  w-[250px];
+}
+.Footer__address h1 {
+  @apply text-2xl text-orange-500;
+}
+.Footer__address div {
+  @apply flex flex-col gap-3 pt-6;
+}
+.Footer__address p {
+  @apply flex;
+}
+.Footer__address span {
+  @apply border p-3 cursor-pointer rounded-[50%] hover:text-black hover:bg-slate-300 text-xl;
+}
+
+/* ===============
+===Links===========
+================== */
+.Footer__links {
+  @apply flex flex-col gap-6 pl-6 md:pl-0 w-[250px];
+}
+.Footer__links h1 {
+  @apply text-2xl text-orange-500;
+}
+.Footer__links div {
+  @apply flex flex-col gap-2;
+}
+.Footer__links a {
+  @apply flex gap-1;
+}
+/* ===============
+===Contact===========
+================== */
+.Footer__contact {
+  @apply flex flex-col gap-6 pl-6 md:pl-0 w-[250px];
+}
+.Footer__contact h1 {
+  @apply text-2xl text-orange-600;
+}
+.Footer__contact form {
+  @apply flex flex-col gap-4;
+}
+.Footer__contact input {
+  @apply w-[250px] py-3 px-2 rounded-md;
+}
+.Footer__contact button {
+  @apply w-[250px] py-3 rounded-md bg-orange-600 text-center;
+}
+
+@media (max-width: 1024px) {
+  .Footer {
+    @apply flex-wrap h-full gap-y-8 pb-6;
+  }
+}
+@media (max-width: 768px) {
+  .Footer {
+    @apply flex flex-col h-full  gap-4 pb-6;
+  }
+  .Footer__logo {
+    @apply w-screen pl-6 h-auto;
+  }
+  .Footer__contact {
+    @apply w-full pl-6 pr-2;
+  }
+  .Footer__contact input {
+    @apply w-[250px];
+  }
+  .Footer__contact button {
+    @apply w-[250px];
+  }
+}

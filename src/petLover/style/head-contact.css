@@ -1,0 +1,19 @@
+.Container {
+  @apply flex  justify-between items-center h-24  px-16;
+}
+.Container__logo {
+  @apply font-bold text-5xl hidden md:flex;
+}
+.Container__address {
+  @apply flex gap-8 items-center justify-center;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    @apply px-0;
+  }
+
+  .Container__address {
+    @apply gap-2 sm:gap-8 w-screen;
+  }
+}

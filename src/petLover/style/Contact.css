@@ -1,0 +1,23 @@
+.Contact__Container {
+  @apply flex flex-col items-center justify-center gap-4 md:gap-10 h-auto py-8  md:py-20 bg-gray-100;
+}
+.Contact__Form__Container {
+  @apply flex  justify-center w-screen md:w-[650px] lg:w-[900px];
+}
+.Contact__Form__Container form {
+  @apply flex flex-col gap-4 w-full;
+}
+.Contact__Form__Container input {
+  @apply px-5 py-3 outline-none border rounded-md;
+}
+.Contact__Form__Container input:focus {
+  @apply border-4 border-opacity-50 border-pink-300;
+}
+
+.Contact__Form__Container textarea {
+  @apply px-5 py-3 h-[250px] outline-none border rounded-md;
+}
+
+.Contact__Form__Container textarea:focus {
+  @apply border-4 border-opacity-50 border-pink-300;
+}

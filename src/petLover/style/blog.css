@@ -1,0 +1,81 @@
+.Blog__Container {
+  @apply flex flex-col items-center justify-center gap-4 md:gap-10 py-8  md:py-20;
+}
+
+.BlogDetail {
+  @apply flex lg:flex-row flex-col overflow-hidden h-auto mx-0  md:mx-7;
+}
+.BlogDetail__left {
+  @apply lg:flex-[60%]  flex flex-col items-center pt-6 pb-4;
+}
+.BlogDetail__left span {
+  @apply flex justify-center items-center gap-1 text-sm md:text-lg;
+}
+
+.BlogDetail__right {
+  @apply lg:flex-[25%]  flex flex-col h-auto items-start gap-y-10;
+}
+/* ===============
+====BlogDetails__Form==
+================= */
+.Blog__Form__Container {
+  @apply flex flex-col gap-3  bg-gray-100 py-3  rounded-md  w-[750px];
+}
+.Blog__Form__Container form {
+  @apply flex flex-col gap-4 w-full px-3;
+}
+.Blog__Form__Container input {
+  @apply px-5 py-2 outline-none border rounded;
+}
+.Blog__Form__Container input:focus {
+  @apply border-4 border-opacity-50 border-pink-300;
+}
+
+.Blog__Form__Container textarea {
+  @apply px-5 py-3 h-[170px] outline-none border rounded-md;
+}
+
+.Blog__Form__Container textarea:focus {
+  @apply border-4 border-opacity-50 border-pink-300;
+}
+/* ========
+right====
+========== */
+.BlogDetail__right input {
+  @apply px-3 py-3 w-[230px] sm:w-[305px] outline-none border rounded-l;
+}
+.BlogDetail__right input:focus {
+  @apply border-2 border-opacity-50 border-pink-300;
+}
+
+.BlogDetail__right div p .btn_search {
+  @apply p-3 border-r border-t border-b rounded-r text-orange-600;
+}
+
+@media (max-width: 768px) {
+  .BlogDetail {
+    @apply items-center w-auto;
+  }
+  .BlogDetail__left {
+    @apply w-full;
+  }
+  .BlogDetail__right {
+    @apply w-[350px] items-center;
+  }
+  .Blog__Form__Container {
+    @apply w-screen;
+  }
+}
+@media (max-width: 500px) {
+  .Blog__Form__Container {
+    @apply w-screen;
+  }
+  .BlogDetail__right {
+    @apply w-full;
+  }
+}
+@media (max-width: 300px) {
+  .Blog__Form__Container {
+    @apply w-[250px];
+  }
+}
